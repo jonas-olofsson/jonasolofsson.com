@@ -1,0 +1,10 @@
+.site-header {
+  background-color: white;
+  height: 50px;
+  padding: 20px;
+  color: darkblue;
+}
+
+.intro {
+  font-size: large;
+}
