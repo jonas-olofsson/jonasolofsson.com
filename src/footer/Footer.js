@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
+// @flow
+import * as React from 'react';
 import './Footer.css';
 
-class Footer extends Component {
+type Props = { }
+
+class Footer extends React.Component<Props> {
     render() {
         return (
             <footer className="site-footer">

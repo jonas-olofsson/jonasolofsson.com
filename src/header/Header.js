@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
+// @flow
+import * as React from 'react';
 import './Header.css';
 
-class Header extends Component {
+type Props = {}
+
+class Header extends React.Component<Props> {
     render() {
         return (
             <div className="site-header">

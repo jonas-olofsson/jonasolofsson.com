@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
+// @flow
+import * as React from 'react';
 import './App.css';
 import Header from './header/Header.js'
 import IndexPage from './index-page/IndexPage.js'
 import Footer from './footer/Footer.js'
 
-class App extends Component {
+type Props = { }
+
+class App extends React.Component<Props> {
   render() {
     return (
       <div className="App">

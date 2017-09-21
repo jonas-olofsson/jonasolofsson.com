@@ -1,8 +1,11 @@
-import React, { Component } from 'react';
+// @flow
+import * as React from 'react';
 import image from './jag.jpg';
 import './IndexPage.css';
 
-class IndexPage extends Component {
+type Props = {}
+
+class IndexPage extends React.Component<Props> {
     render() {
         return (
             <div className="index-page">
