@@ -6,3 +6,16 @@
   color: darkblue;
   text-align: center;
 }
+.site-performance-link{
+    font-size: 12px;
+    margin: 5px;
+    text-decoration: none;
+    color: darkblue;
+}
+.site-performance-link:hover {
+    text-decoration: none;
+    color: midnightblue;
+}
+.site-performance-link:visited {
+    color: darkblue;
+}
