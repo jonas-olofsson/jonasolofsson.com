@@ -9,7 +9,7 @@ class IndexPage extends React.Component<Props> {
     render() {
         return (
             <div className="index-page">
-                <img src={image} className="index-image" alt="Me" />
+                <img src={image} className="index-image" alt="Me" width="250px"/>
             </div>
         );
     }
