@@ -3,7 +3,7 @@
   publish = "build"
   
   # This will be your default build command
-  command = "yarn build" 
+  command = "yarn build && yarn build:lambda" 
   
   # This is where we will look for your lambda functions
   functions = "aws-lambda-functions/" 

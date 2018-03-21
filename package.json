@@ -6,7 +6,8 @@
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "netlify-lambda": "^0.2.0"
   },
   "devDependencies": {
     "flow-bin": "^0.55.0",
@@ -17,8 +18,18 @@
     "flow": "flow",
     "flow:watch": "flow-watch",
     "start": "react-scripts start",
+    "start:lambda": "netlify-lambda serve aws-lambda-functions",
     "build": "flow && react-scripts build",
+    "build:lambda": "netlify-lambda build aws-lambda-functions",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "proxy": {
+    "/.netlify/functions": {
+      "target": "http://localhost:9000",
+      "pathRewrite": {
+        "^/\\.netlify/functions": ""
+      }
+    }
   }
 }
