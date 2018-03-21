@@ -7,3 +7,12 @@
   
   # This is where we will look for your lambda functions
   functions = "aws-lambda-functions/" 
+  
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'none'; frame-ancestors 'none'; object-src 'none'; form-action 'self'; base-uri 'none'; script-src 'self' https://d33wubrfki0l68.cloudfront.net/; style-src 'self' https://fonts.googleapis.com/ https://d33wubrfki0l68.cloudfront.net/; font-src https://fonts.gstatic.com/; img-src 'self';"
+    Referrer-Policy = "no-referrer"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
