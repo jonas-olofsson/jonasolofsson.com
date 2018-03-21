@@ -12,15 +12,15 @@
   "devDependencies": {
     "flow-bin": "^0.55.0",
     "flow-watch": "^1.1.1",
-    "yarn": "^1.0.2"
+    "yarn": "^1.5.1"
   },
   "scripts": {
     "flow": "flow",
     "flow:watch": "flow-watch",
     "start": "react-scripts start",
-    "start:lambda": "netlify-lambda serve aws-lambda-functions",
-    "build": "flow && react-scripts build",
-    "build:lambda": "netlify-lambda build aws-lambda-functions",
+    "start:lambda": "netlify-lambda serve src/lambda",
+    "build": "netlify-lambda build src/lambda && react-scripts build",
+    "build:lambda": "netlify-lambda build src/lambda",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
